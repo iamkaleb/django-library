@@ -1,13 +1,7 @@
-{% load static %}
-<!DOCTYPE html>
-<html>
 
-<head>
-    <meta charset="utf-8">
-    <title>Library</title>
-</head>
+{% extends 'shared/base.html' %}
 
-<body>
+{% block content %}
     <h1>Inventory Book</h1>
 
     {% if book.id is not None %}
@@ -49,7 +43,5 @@
             <input type="submit" value="Create" />
         {% endif %}
 
-    </form>
-</body>
-
-</html>
+        </form>
+{% endblock %}
