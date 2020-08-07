@@ -30,8 +30,7 @@
             <label for="location">Library: </label>
             <select id="location" type="text" name="location">
                 {% for library in all_libraries %}
-                <option {% if library.id == book.location_id %}selected{% endif %} value="{{ library.id }}">
-                    {{ library.title }}</option>
+                <option {% if library.id == book.location_id %}selected{% endif %} value="{{ library.id }}">{{ library.title }}</option>
                 {% endfor %}
             </select>
         </fieldset>
